@@ -4,11 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cadastro from './components/JS/Cadastro'
 import Login from './components/JS/Login'
 import Home from './components/JS/Home'
-{/*import Quiz from './components/JS/Quiz'*/}
+import Quiz from './components/JS/Quiz'
 import Configuracoes from './components/JS/Configuracoes'
 import Perfil from './components/JS/Perfil'
 
-import AcertouQuiz from './components/JS/AcertouQuiz'
 
 import { AppProvider } from './context/AppContext'; // Importa o contexto
 
@@ -27,7 +26,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Cadastro" element={<Cadastro />} />
           <Route path="/Home" element={<Home />} />
-  {/* <Route path="/Quiz" element={<Quiz />} /> */}
+          <Route path="/Quiz" element={<Quiz />} />
           <Route path="/Configuracoes" element={<Configuracoes />} />
           <Route path="/Perfil" element={<Perfil />} />
 

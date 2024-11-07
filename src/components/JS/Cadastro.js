@@ -113,7 +113,7 @@ const navigate = useNavigate();
                 setErroNull(false)
                 setTextoErro('Sua Senha não confere')
             }
-            else if(senha.length == 8){            
+            else if(senha.length>8){            
                 setErroNull(false)
                 setTextoErro('Sua senha deve conter apenas 8 caracteres')
             }

@@ -1,15 +1,15 @@
-/*
-import styles from '../CSS/Quiz.module.css'
-import logo from '../../img/logoGrande.png';
+
+//import styles from '../CSS/Quiz.module.css'
+//import logo from '../../img/logoGrande.png';
 
 // import logoGrande from '../img/LogoGrande.png';
 
-import { useState } from 'react'
-import { useEffect } from 'react';
+//import { useState } from 'react'
+//import { useEffect } from 'react';
 
-import { AppContext } from '../../context/AppContext';
-import { useNavigate } from 'react-router-dom';
-import { useContext } from 'react';
+//import { AppContext } from '../../context/AppContext';
+//import { useNavigate } from 'react-router-dom';
+///import { useContext } from 'react';
 
 //EU TENHO QUE PEGAR A FUNCAO QUE VAI TRAZER AS PERGUNTAS,
 // DAI EU VOU CRIAR CARDS NA TELA CONFORME O RETORNO DA API,
@@ -21,8 +21,8 @@ import { useContext } from 'react';
 //MAS CASO NN, VOU ENVIAR O EMAIL DA PESSOA PARA O BACK, PARA BLOQUEAR SEU ACESSO, E REDIRECIONAR PARA A TELA DE FALHA
 
 
-import React from 'react';
-import { click } from '@testing-library/user-event/dist/click';
+//import React from 'react';
+//import { click } from '@testing-library/user-event/dist/click';
 
 
 
@@ -128,7 +128,7 @@ import { click } from '@testing-library/user-event/dist/click';
 //                     <h3 className={styles.textoPergunta}>{perguntaAPI}</h3>
 //                     <h5 className={styles.textoAuxilio}>(escolha a alternativa correta)</h5>
 //                         <video autoPlay loop muted>
-//                             <source src={videoAPI} type="video/mp4"></source>{/*AQ PEGA UM VIDEO ACREDITO Q LOCAL, POR ESQUANTO TA UM VIDEO FICTICIO, MAS PRA PEGAR O DE VDD, É SÓ EXCLUIR A CRIACAO DA CONST DA LINHA 4, Q DAI VAI SER SUBSTITUIDO PELO DA FUNCAO ACIMA*/
+//                             <source src={videoAPI} type="video/mp4"></source>{/*AQ PEGA UM VIDEO ACREDITO Q LOCAL, POR ESQUANTO TA UM VIDEO FICTICIO, MAS PRA PEGAR O DE VDD, É SÓ EXCLUIR A CRIACAO DA CONST DA LINHA 4, Q DAI VAI SER SUBSTITUIDO PELO DA FUNCAO ACIMA*/}
 //                             Seu navegador não suporta o elemento de vídeo.
 //                         </video>
 //                     <div className={styles.divVideo}>
@@ -144,17 +144,17 @@ import { click } from '@testing-library/user-event/dist/click';
 //         </div>
 //     );
 // }
-/*import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
-import { useContext } from 'react';
-import { AppContext } from '../../context/AppContext';
+//import { useContext } from 'react';
+//import { AppContext } from '../../context/AppContext';
 
 
-import React from 'react';
+//import React from 'react';
 
-function Quiz() {
+//function Quiz() {
     
-        const { dados } = useContext(AppContext);
+       {/*} const { dados } = useContext(AppContext);
         console.log(dados);
     
     const BASE_URL = 'http://localhost:8080/'
@@ -276,10 +276,10 @@ function Quiz() {
                     </video>
                     
 
-                </div> 
+                </div> */}
             
-            </div>
+            {/*</div>
         </div>
     );
 }
-export default Quiz*/
+export default Quiz*/}

@@ -6,7 +6,7 @@
   
   }
   
-  .App-header1 {
+  .header1 {
     background-image: linear-gradient(#C7E2FE, #345ADE);
     height: 100vw;
     width: 100%;
@@ -18,7 +18,7 @@
   
   }
   
-  .App-header {
+  .header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,6 +38,7 @@
     width: 3%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   
   
@@ -116,7 +117,7 @@
   }
   
   
-  .input-section {
+  .section {
     display: flex;
     flex-direction: column;
     align-items: center;

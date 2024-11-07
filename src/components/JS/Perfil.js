@@ -2,6 +2,14 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
 import styles from '../CSS/Perfil.module.css';
+import pessoinha from '../../img/pessoinha.png';
+import bolinha from '../../img/perfil.png'; 
+import imagem from '../../img/perfil.png'; // Exemplo de caminho de importação
+import configurar from '../../img/chat.png'; // Exemplo de caminho de importação
+import { IoMdSettings } from "react-icons/io";
+
+
+
 
 function Perfil() {
     const BASE_URL = 'http://localhost:8080/';
@@ -14,11 +22,21 @@ function Perfil() {
     const [atividades, setAtividades] = useState([]);
     const [erro, setErro] = useState(false);
     const [mensagemErro, setMensagemErro] = useState('');
+    const [erroNull, setErroNull] = useState(true);
+    const [textoErro, setTextoErro] = useState('')
+    
+
+    function iconNavegacaoHome() {
+        navigate('/Home')
+}
+
+function iconNavegacaoConfig() {
+    navigate('/Configuracoes')
+}
 
     // Carregar os dados do perfil ao montar o componente
     useEffect(() => {
         async function fetchProfile() {
-            e.preventDefault()
             if (nome == null || nome == undefined || nome == '' ||
             tipoUsuario == null || tipoUsuario == undefined || tipoUsuario == '' ||
                 tipoUsuario == null || tipoUsuario == undefined || tipoUsuario == '' ||
@@ -98,13 +116,13 @@ function Perfil() {
         <div className='App'>
 
   
-        <div className={styles.App-header1}>
-          <header className={styles.App-header}>
-            <div className={styles.voltar}>
-              <img src={imagem_Voltar} alt="voltar" />
+        <div className={styles.header1}>
+          <header className={styles.header}>
+            <div className={styles.voltar} onClick={iconNavegacaoHome}>
+            <IoMdSettings />
             </div>
             <h1 className={styles.h1}>Perfil</h1>
-            <div className={styles.configurar}>
+            <div className={styles.configurar} onClick={iconNavegacaoConfig}>
               <img src={configurar} alt="configurar" />
             </div>
           </header>
@@ -124,7 +142,7 @@ function Perfil() {
     
     
          
-         <div className={styles.input-section}>
+         <div className={styles.section}>
                <input className={styles.texto} placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit..." />
                <input className={styles.input} placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit ..." />
             </div>

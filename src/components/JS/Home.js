@@ -6,18 +6,18 @@ import atividades from '../../img/atividades.png';
 import aulas from '../../img/videoAula.png';
 import ranking from '../../img/Rank.png';
 import pesquisar from '../../img/pesquisar.png';
-import comentario from '../../img/comentario.png';
-import salvoFalso from '../../img/SalvoFalse.png';
+import comentario from '../../img/chat.png'
 
 import videoAPI from '../../img/video1.mp4';
 
 
 
 
-// import { useState } from 'react'
-// import { useEffect } from 'react';
+ import { useState } from 'react'
+ import { useEffect } from 'react';
 
 import { useNavigate } from 'react-router-dom';
+
 
 import { useContext } from 'react';
 import { AppContext } from '../../context/AppContext';
@@ -28,6 +28,7 @@ import React from 'react';
 
 function Home() {
     const { dados } = useContext(AppContext);
+    const navigate = useNavigate();
     console.log(dados);
     function irParaVideo() {
 
@@ -36,15 +37,30 @@ function Home() {
 
     }
 
+    function iconNavegacaoPerfil() {
+            navigate('/Perfil')
+    }
+
+    //function iconNavegacaoAtividades() {
+      //  navigate('/Atividades')
+//}
+//function iconNavegacaoChat() {
+   // navigate('/Chat')
+//}
+//function iconNavegacaoRanking() {
+    //navigate('/Ranking')
+//}
+
     return (
 
         <div className={styles.body}>
             <div className={styles.esquerda}>
                 <img src={logo}></img>
                 <div className={styles.nav}>
-                    <div className={styles.divzinha}>
-                        <img src={chat}></img>
-                        <h4>Chat</h4>
+                    <div className={styles.divzinha} onClick={iconNavegacaoPerfil}>
+                            <img src={chat}></img>
+                        <h4>Perfil</h4>
+
                     </div>
                     <div className={styles.divzinha}>
                         <img src={atividades}></img>
@@ -78,14 +94,17 @@ function Home() {
                             <h3 className={styles.infoVideo}>titulo</h3>
                             <h3 className={styles.infoVideo}>data e hr de postagem</h3>
                         </div>
+
                         </div>
                     <hr></hr>
                     <div className={styles.divComentar} onClick={abrirComentarios}>
                         <div>
+                        <button>
                         <img src={comentario}></img>
+                        </button>
                         <h4>Comentar...</h4>
                         </div>
-                        <img src={salvoFalso}></img>
+                       
                     </div>
 
                 </div>
@@ -93,6 +112,7 @@ function Home() {
         </div>
     )
 }
+
 
 export default Home
 
