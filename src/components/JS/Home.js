@@ -42,11 +42,11 @@ function Home() {
     }
 
     //function iconNavegacaoAtividades() {
-      //  navigate('/Atividades')
+       // navigate('/Atividades')
 //}
-//function iconNavegacaoChat() {
-   // navigate('/Chat')
-//}
+function iconNavegacaoChat() {
+    navigate('/Chat')
+}
 //function iconNavegacaoRanking() {
     //navigate('/Ranking')
 //}
@@ -62,9 +62,9 @@ function Home() {
                         <h4>Perfil</h4>
 
                     </div>
-                    <div className={styles.divzinha}>
+                    <div className={styles.divzinha} onClick={iconNavegacaoChat}>
                         <img src={atividades}></img>
-                        <h4>Atividades</h4>
+                        <h4>Chat</h4>
                     </div>
                     <div className={styles.divzinha}>
                         <img src={aulas}></img>

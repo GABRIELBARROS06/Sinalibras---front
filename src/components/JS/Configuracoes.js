@@ -51,6 +51,10 @@ else{
       
     }
     }
+
+    function myPerfilNavigation() {
+      navigate("/Perfil")
+    }
   return (
     <div className={styles.configuracoes} onClick={()=>{
         const dadosParaEnviar = {
@@ -79,7 +83,7 @@ else{
 
       <div className={styles.options_list}>
         <div className={styles.card}>
-          <div>
+          <div onClick={myPerfilNavigation}>
           <img src={perfil}></img>
           <p>Meu perfil</p>
           </div>

@@ -112,6 +112,10 @@ function iconNavegacaoConfig() {
         }
     }
 
+    function iconNavegacaoEditar() {
+        navigate('/EditarPerfil')
+    }
+
     return (
         <div className='App'>
 
@@ -149,8 +153,8 @@ function iconNavegacaoConfig() {
         
           </main>
            
-          <div className={styles.quadradinho}>
-             <span className={styles.span1}>Editar Perfil</span>
+          <div className={styles.quadradinho} onClick={iconNavegacaoEditar}>
+             <button className={styles.span1}>Editar Perfil</button>
           </div>
        
            <div className={styles.p}>Postagens</div>

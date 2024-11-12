@@ -7,6 +7,7 @@ import Home from './components/JS/Home'
 import Quiz from './components/JS/Quiz'
 import Configuracoes from './components/JS/Configuracoes'
 import Perfil from './components/JS/Perfil'
+import EditarPerfil from './components/JS/EditarPerfil'
 
 
 import { AppProvider } from './context/AppContext'; // Importa o contexto
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Quiz" element={<Quiz />} />
           <Route path="/Configuracoes" element={<Configuracoes />} />
           <Route path="/Perfil" element={<Perfil />} />
+          <Route path="/EditarPerfil" element={<EditarPerfil />} />
 
         </Routes>
       </BrowserRouter>
