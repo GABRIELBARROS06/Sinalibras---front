@@ -9,6 +9,7 @@ import pesquisar from '../../img/pesquisar.png';
 import comentario from '../../img/chat.png'
 
 import videoAPI from '../../img/video1.mp4';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
 
@@ -30,6 +31,8 @@ function Home() {
     const { dados } = useContext(AppContext);
     const navigate = useNavigate();
     console.log(dados);
+    const [activePage, setActivePage] = useState(1);
+
     function irParaVideo() {
 
     }
@@ -41,9 +44,9 @@ function Home() {
             navigate('/Perfil')
     }
 
-    //function iconNavegacaoAtividades() {
-       // navigate('/Atividades')
-//}
+    function iconNavegacaoAtividades() {
+        navigate('/Aulas')
+}
 function iconNavegacaoChat() {
     navigate('/Chat')
 }
@@ -52,7 +55,6 @@ function iconNavegacaoChat() {
 //}
 
     return (
-
         <div className={styles.body}>
             <div className={styles.esquerda}>
                 <img src={logo}></img>
@@ -66,7 +68,7 @@ function iconNavegacaoChat() {
                         <img src={atividades}></img>
                         <h4>Chat</h4>
                     </div>
-                    <div className={styles.divzinha}>
+                    <div className={styles.divzinha} onClick={iconNavegacaoAtividades}>
                         <img src={aulas}></img>
                         <h4>Aulas</h4>
                     </div>

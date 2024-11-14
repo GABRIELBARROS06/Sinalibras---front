@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../CSS/Chat.module.css'
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { CiMenuKebab } from "react-icons/ci";
 import { IoSend } from "react-icons/io5";
@@ -16,28 +17,28 @@ const users = [
 
 const Chat = () => {
   return (
-    <div className={styles.chat-container}>
+    <div className={styles.chatContainer}>
       {/* Sidebar com lista de usuários */}
       <div className={styles.sidebar}>
-        <div className={styles.search-bar}>
+        <div className={styles.searchBar}>
         <IoSearch />
           <input type="text" placeholder="Pesquisar por usuários..." />
         </div>
 
-        <div class={styles.contacts-container}>
+        <div class={styles.contactsContainer}>
   <div class={styles.contact}><FaUserCircle className={styles.cont}/></div>
   <div class={styles.contact}><FaUserCircle className={styles.cont}/></div>
   <div class={styles.contact}><FaUserCircle className={styles.cont}/></div>
   <div class={styles.contact}><FaUserCircle className={styles.cont}/></div>
 </div>
 
-        <div className={styles.user-list}>
+        <div className={styles.userList}>
           {users.map((user) => (
-            <div className={styles.user-item} key={user.id}>
-              <div className={styles.user-avatar}></div>
-              <div className={styles.user-info}>
+            <div className={styles.userItem} key={user.id}>
+              <div className={styles.userAvatar}></div>
+              <div className={styles.userInfo}>
                 <span>{user.name}</span>
-                <div className={styles.status-dot}></div>
+                <div className={styles.statusDot}></div>
               </div>
             </div>
           ))}
@@ -45,31 +46,31 @@ const Chat = () => {
       </div>
 
       {/* Área do Chat */}
-      <div className={styles.chat-area}>
-        <div className={styles.chat-header}>
-          <div className={styles.chat-header-info}>
-            <div className={styles.selected-user-avatar}></div>
-            <div className={styles.selected-user-name}>JAMES SMITH</div>
+      <div className={styles.chatArea}>
+        <div className={styles.chatHeader}>
+          <div className={styles.chatheaderInfo}>
+            <div className={styles.selecteduserAvatar}></div>
+            <div className={styles.selecteduserName}>JAMES SMITH</div>
           </div>
-          <div className={styles.chat-header-actions}>
+          <div className={styles.chatheaderActions}>
             <button><BiSolidPhoneCall /></button>
             <button><CiMenuKebab /></button>
           </div>
         </div>
 
         <div className={styles.messages}>
-          <div className={styles.message-received}>
+          <div className={styles.messageReceived}>
             <p>Oi, como vai?</p>
           </div>
-          <div className={styles.message.sent}>
+          <div className={styles.messageSent}>
             <p>Tudo bem, e você?</p>
           </div>
         </div>
 
         {/* Input para enviar mensagens */}
-        <div className={styles.message-input}>
+        <div className={styles.messageInput}>
           <input type="text" placeholder="Mensagem..." />
-          <button className={styles.send-button}><IoSend />
+          <button className={styles.sendButton}><IoSend />
 </button>
         </div>
       </div>

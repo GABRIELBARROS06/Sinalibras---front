@@ -136,7 +136,17 @@
     transform: translateY(180px);
   }
   
+  .iconBack{
+    display: flex;
+    width: 5vw;
+    height: 5vh;
+  }
   
+  .iconSettings{
+    display: flex;
+    width: 5vw;
+    height: 5vh;
+  }
   .quadradinho, .quadradinho2 {
     background-color: rgba(255, 255, 255, 0);
     width: 9%;

@@ -10,7 +10,7 @@ import { IoSendSharp } from "react-icons/io5";
 function App() {
   return (
     <div className={styles.App}>
-      <header className="App-header">
+      <header className={styles.AppHeader}>
         <FaUserCircle />
 
         <h1>Editar Perfil </h1>

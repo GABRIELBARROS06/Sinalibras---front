@@ -8,7 +8,8 @@ import Quiz from './components/JS/Quiz'
 import Configuracoes from './components/JS/Configuracoes'
 import Perfil from './components/JS/Perfil'
 import EditarPerfil from './components/JS/EditarPerfil'
-
+import Chat from './components/JS/Chat'
+import Aulas from './components/JS/Aulas'
 
 import { AppProvider } from './context/AppContext'; // Importa o contexto
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/Configuracoes" element={<Configuracoes />} />
           <Route path="/Perfil" element={<Perfil />} />
           <Route path="/EditarPerfil" element={<EditarPerfil />} />
+          <Route path="/Chat" element={<Chat />} />
+          <Route path="/Aulas" element={<Aulas />} />
 
         </Routes>
       </BrowserRouter>

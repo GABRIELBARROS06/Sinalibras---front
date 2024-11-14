@@ -8,7 +8,7 @@
 }
 
 
-.chat-container {
+.chatContainer {
   display: flex;
   height: 100vh;
 }
@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.search-bar input {
+.searchBar input {
   width: 20vw;
   padding: 15px;
   border-radius: 20px;
@@ -31,11 +31,11 @@
   margin-bottom: 20px;
 }
 
-.search-bar ::placeholder{
+.searchBar ::placeholder{
   gap: 16px;
 }
 
-.contacts-container{
+.contactsContainer{
   display: flex;
   gap: 16px;
   cursor: pointer;
@@ -50,11 +50,11 @@
   height: 100px;
 }
 
-.user-list {
+.userList {
   width: 100%;
 }
 
-.user-item {
+.userItem {
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -63,7 +63,7 @@
   border-radius: 10px;
 }
 
-.user-avatar {
+.userAvatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -71,16 +71,16 @@
   margin-right: 10px;
 }
 
-.user-info {
+.userInfo {
   display: flex;
   align-items: center;
 }
 
-.user-info span {
+.userInfo span {
   font-weight: bold;
 }
 
-.status-dot {
+.statusDot {
   width: 10px;
   height: 10px;
   background-color: blue;
@@ -89,7 +89,7 @@
 }
 
 /* Área do chat */
-.chat-area {
+.chatArea {
   width: 75%;
   background-color: #7fb3ff;
   display: flex;
@@ -97,7 +97,7 @@
   justify-content: space-between;
 }
 
-.chat-header {
+.chatHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,12 +106,12 @@
   border-bottom: 1px solid lightgray;
 }
 
-.chat-header-info {
+.chatheaderInfo {
   display: flex;
   align-items: center;
 }
 
-.selected-user-avatar {
+.selecteduserAvatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -119,12 +119,12 @@
   margin-right: 10px;
 }
 
-.selected-user-name {
+.selecteduserName {
   font-size: 18px;
   font-weight: bold;
 }
 
-.chat-header-actions button {
+.chatheaderActions button {
   margin-left: 10px;
   padding: 10px;
   border: none;
@@ -148,25 +148,25 @@
   margin-bottom: 20px;
 }
 
-.message-received {
+.messageReceived {
   background-color: white;
   align-self: flex-start;
 }
 
-.message.sent {
+.messageSent {
   background-color: #0044cc;
   color: white;
   align-self: flex-end;
 }
 
-.message-input {
+.messageInput {
   display: flex;
   align-items: center;
   padding: 10px;
   background-color: #d1e7ff;
 }
 
-.message-input input {
+.messageInput input {
   flex: 1;
   padding: 10px;
   border-radius: 10px;
@@ -174,7 +174,7 @@
   margin-right: 10px;
 }
 
-.send-button {
+.sendButton {
   padding: 10px;
   border: none;
   border-radius: 50%;
